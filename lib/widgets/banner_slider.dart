@@ -1,0 +1,26 @@
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
+
+class BannerSlider extends StatelessWidget {
+  const BannerSlider({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return CarouselSlider(
+      items: [
+        Image.asset('assets/images/banners/slider1.png'),
+        Image.asset('assets/images/banners/slider2.png'),
+        Image.asset('assets/images/banners/slider3.png'),
+      ],
+
+      options: CarouselOptions(
+        height: 222,
+        autoPlay: true,
+        autoPlayInterval: Duration(seconds: 3),
+        autoPlayAnimationDuration: Duration(milliseconds: 800),
+        viewportFraction: 0.8,
+        enlargeCenterPage: true,
+      ),
+    );
+  }
+}

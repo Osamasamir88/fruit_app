@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fruit/widgets/banner_slider.dart';
+import 'package:fruit/widgets/categorys_slider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -32,6 +34,14 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
+      ),
+     
+      body: Column(
+        children: [
+          BannerSlider(),
+
+          CategorysSlider(),
+        ],
       ),
     );
   }
